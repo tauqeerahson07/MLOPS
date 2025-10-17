@@ -104,7 +104,7 @@ def api_predict():
 
 @app.route("/about", methods=["GET"])
 def about():
-    return{"name": " Bob", "role": "Junior Data Scientist"}
+    return{"name": " Bob", "role": "Junior AI Engineer"}
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
