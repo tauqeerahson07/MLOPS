@@ -101,6 +101,9 @@ def api_predict():
     X = np.array(row).reshape(1, -1)
     pred = model.predict(X)[0]
     return {"prediction": float(pred)}
+@app.route("/about", methods=["GET"])
+def about():
+    return{"name": "Alice", "role": "Junior Data Scientist"}
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
