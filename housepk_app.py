@@ -103,6 +103,7 @@ def api_predict():
     return {"prediction": float(pred)}
 @app.route("/about", methods=["GET"])
 def about():
-    return{"name": "Alice", "role": "Junior Data Scientist"}
+    return[{"name": " Bob", "role": "Junior AI Engineer"}
+           {"name": "Alice", "role": "Junior Data Scientist"}]
 
 app.run(debug=True, port=5000)
