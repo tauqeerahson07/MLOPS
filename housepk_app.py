@@ -102,9 +102,4 @@ def api_predict():
     pred = model.predict(X)[0]
     return {"prediction": float(pred)}
 
-@app.route("/about", methods=["GET"])
-def about():
-    return{"name": " Bob", "role": "Junior Data Scientist"}
-
-if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+app.run(debug=True, port=5000)
